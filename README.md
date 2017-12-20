@@ -1,2 +1,2 @@
 # eegfmri
-Code for simultaneous EEG-fMRI measurements on Siemens Trio MR scanner.
+Code for simultaneous EEG-fMRI measurements on the Siemens Trio MR scanner.
