@@ -45,9 +45,9 @@ l = filedata{idx_samplerate+1};
 %disp('[+] Splitting data values...')
 sp = isspace(l);
 if any(sp)
-    dw = diff(sp);
-    starts = [1, find(dw == -1) + 1];
-    stops = [find(dw == 1), length(l)];
+    delta = diff(sp);
+    starts = [1, find(delta == -1) + 1];
+    stops = [find(delta == 1), length(l)];
     n_values = numel(starts);
     s = cell(1, n_values);
     for i=1:n_values
